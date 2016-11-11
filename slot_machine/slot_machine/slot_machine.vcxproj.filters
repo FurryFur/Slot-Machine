@@ -27,4 +27,9 @@
       <Filter>Docs</Filter>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
