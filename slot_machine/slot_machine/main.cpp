@@ -110,7 +110,7 @@ void PrintCentre(std::stringstream& _ss,
 
 		GetConsoleScreenBufferInfo(_hConsole, &_csbi);
 
-		int _iX = (_csbi.dwSize.X - line.length()) / 2;
+		int _iX = (_csbi.dwSize.X - static_cast<int>(line.length())) / 2;
 		int _iY = _csbi.dwCursorPosition.Y;
 
 		GotoXY(_iX, _iY);
